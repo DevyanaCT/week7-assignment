@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #d6a0eb;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1em 0;
+}
+
+nav ul {
+    display: flex; /* Using Flexbox for horizontal layout */
+    justify-content: center;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.main-content {
+    display: grid; /* Using CSS Grid for the main content */
+    grid-template-columns: 3fr 1fr; /* Main content takes more space than sidebar */
+    margin: 20px;
+    gap: 20px; /* Space between columns */
+}
+
+.content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar {
+    background: #e2e2e2;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.gallery {
+    margin: 20px;
+}
+
+.gallery h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.grid {
+    display: grid; /* Using CSS Grid for the image gallery */
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Responsive grid */
+    gap: 10px; /* Space between images */
+}
+
+.grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer nav ul {
+    display: flex; /* Using Flexbox for footer links */
+    justify-content: center;
+    list-style-type: none;
+}
+
+footer nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+}
